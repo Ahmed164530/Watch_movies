@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/signUp.css">
+    <link rel="stylesheet" href="css/project_framework.css">
+    <link rel="shortcut icon" href="imgs/icon.ico" type="image/x-icon">
+    <title>Sign Up</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <form class="container-fluid justify-content-start">
+            <a href="dashboard/admin/index.html"><button type="button" class="btn btn-danger">Dashboard</button></a>
+            <a href="dashboard/user/index.html"><button type="button" class="btn btn-light">Your profile</button></a>
+        </form>
+        <div class="logo"></div>
+    </nav>
+
+    <div class="container">
+        <h1 class="title">Sign Up</h1>
+        <form action="signUp.php" method="post">
+            <div class="input-group">
+                <label for="username">
+                    <h3>Username:</h3>
+                </label>
+                <input type="text" id="username" name="username" required placeholder="Username">
+            </div>
+            <div class="input-group">
+                <label for="name">
+                    <h3>name:</h3>
+                </label>
+                <input type="text" id="name" name="name" required placeholder="Name">
+            </div>
+            <div class="input-group">
+                <label for="email">
+                    <h3>Email:</h3>
+                </label>
+                <input type="email" id="email" name="email" required placeholder="Email">
+            </div>
+            <div class="input-group">
+                <label for="password">
+                    <h3>Password:</h3>
+                </label>
+                <input type="password" id="password" name="password" required placeholder="Password">
+            </div>
+            <div class="input-group">
+                <label for="confirm-password">
+                    <h3>Confirm Password:</h3>
+                </label>
+                <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm Password ">
+            </div>
+            <div class="input-group">
+                <a href="dashboard/user/index.html"><button type="button" class="bottom">Sign Up</button></a>
+            </div>
+        </form>
+        <p class="n">Already have an account? <a class="g" href="signIn.html">Sign In.</a></p>
+    </div>
+</body>
+
+</html>

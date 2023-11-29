@@ -1,0 +1,39 @@
+:root {
+    --logo-color: #E50914;
+}
+
+.logo::before {
+    color: #f8f9fa;
+    content: "Watch";
+    font-size: 25px;
+}
+
+.logo::after {
+    content: "Movies";
+    color: var(--logo-color);
+}
+
+/* Width and color */
+::-webkit-scrollbar {
+    width: 12px;
+    /* or any desired width */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #ffc107;
+    /* darker color when hovered */
+    border-radius: 6px;
+    /* roundness of the handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #ffd350;
+    /* darker color when hovered */
+}

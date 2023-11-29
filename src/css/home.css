@@ -1,0 +1,145 @@
+body {
+    background-color: rgb(0 0 0 / 10%);
+    overflow-x: hidden;
+    color: #fff;
+}
+
+
+
+
+.s{
+    color: #ffc107;
+    
+
+}
+
+.s:hover{
+
+    text-decoration: underline;
+    transition: 0.3s;
+    color: #a50a0a;
+}
+
+a:visited{
+    color: #ffc107;
+}
+
+.parent {
+    background-image: url("../images/2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+}
+
+.container-of-the-container{ /* LOL 😂😂😂😂😂 ; Sorry guys i have no name */
+
+    width: 100vw;
+    
+}
+
+.navbar {
+    background-color: rgb(0 0 0 / 79%);
+    width: 100vw;
+    position: fixed; 
+    top: 0;
+    
+}
+.navbar>div:last-child{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 36px;
+    display: flex;
+    align-items: center;
+}
+.navbar>div:last-child::after{
+    margin-top: 7px;
+}
+.navbar .btn:last-child{
+    margin: 0 10px;
+}
+
+.btn-danger {
+    background-color: #E50914;
+}
+.container {
+    min-height: 100vh;
+    width: 90vw;
+    display: flex;
+    justify-content:left;
+    align-items:center;
+}
+
+.content h1 ,
+.content h2{
+    margin: 20px 0;
+    color:white;
+}
+.content > h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+footer.footer{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #0f0a05;
+    display: flex;
+    flex-direction: column;
+}
+
+footer h1{
+    text-align: center;
+    margin: 50px 0;
+    margin-top: 100px;
+}
+.vid-container{
+    width: 700px;
+    margin: 0 auto;
+}
+footer video{
+    width: 100%;
+    display: block;
+    height: 400px;
+}
+footer .registration{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer .contact{
+    margin-top: 100px;
+}
+footer .contact-links{
+    margin: 20px ;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+footer .contact-links a{
+    color: #fff;
+}
+footer .contact-links a:hover{
+    color: #8e8e8e;
+}
+.copy-rights{
+    text-align: center;
+    background-color: #202020;
+    padding-top: 4px;
+    height: 35px;
+}
+
+.us{
+    text-decoration: none;
+    color: white;
+}
+.us:hover {
+    transition: 0.3s;
+    color: #ffc107;
+
+}

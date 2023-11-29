@@ -1,0 +1,52 @@
+body{
+    background-color: #0f0a05;
+    color: #fff;
+}
+.container{
+    width: 1000px;
+    background-color: #1c1c1c;
+    min-height: 550px;
+    margin-top: 37px;
+    border-radius: 10px;
+    padding: 50px;
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+}
+.container .info-box .img-side{
+    display: flex;
+    flex-direction: column;
+    
+}
+.btns{
+    margin-left: 20px;
+    display: flex;
+    gap: 10px;
+}
+.img-side .img-container{
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+    
+}
+.img-side h1{
+    margin-top: 20px;
+}
+.img-side .img-container img{
+    width: 100%;
+    height: 100%;
+}
+.info-container{
+    display: flex;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+.info-container .data-values h4{
+    margin-bottom: 14px ;
+}
+.info-side button{
+    width: 70px;
+    margin-left: 10px;
+}

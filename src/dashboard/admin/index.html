@@ -1,0 +1,85 @@
+ <!-- <?php
+
+        session_start();
+        // $_SESSION['user_type'] !== 'admin';
+
+        echo $_SERVER['REQUEST_METHOD'];
+        if ($_SESSION['user_type'] !== 'admin') {
+            header('Location: ../');
+        }
+        echo "<pre>";
+        print_r($_POST);
+        echo "</pre>";
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            // if (isset($_POST["logout"])) {
+            //     session_destroy();
+            //     header('Location: ../../index.php');
+            //     exit();
+            // }
+        }
+
+
+        ?>  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/add.css">
+    <link rel="stylesheet" href="../../css/project_framewo  rk.css">
+    <link rel="stylesheet" href="../../css/drop-zone.css">
+    <link rel="shortcut icon" href="imgs/icon.ico" type="image/x-icon">
+    <title>Add Movie</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <form class="container-fluid justify-content-start">
+            <input type="hidden" value="logout" name="logout">
+            <a href="../../index.html" class="btn btn-light">log out</a>
+            <a href="../../view.html"><button type="button" class="btn btn-danger">view movies</button></a>
+        </form>
+        <div class="logo"></div>
+    </nav>
+    <div class="info-box">
+        <h1>Add Movie</h1>
+        <form action="/submit_movie" method="post">
+            <div class="movie-info">
+                <input type="text" placeholder="Movie Name" id="movie_name" name="movie_name" required>
+                <textarea id="movie_details" name="movie_details" required placeholder="Movie Details"></textarea>
+                <input type="url" id="ad_link" name="ad_link" required placeholder="trailer links">
+            </div>
+            <div class="movie-info">
+                <div class="drop-zone-container">
+                    <div class="drop-zone">
+                        <span class="drop-zone__prompt">Drop image here or click to upload</span>
+                        <input type="file" name="img" class="drop-zone__input">
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-warning">Add</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="info-box">
+        <div class="movie-info">
+            <h1>Delete Movie</h1>
+            <form>
+                <input type="text" id="movie-name" name="movie-name" placeholder="Enter Movie ID">
+                <button type="button" class="btn btn-danger">Delete</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../../js/drop-zone.js"></script>
+    <script src="../../js/admin.js"></script>
+</body>
+
+</html>

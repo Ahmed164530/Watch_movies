@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+     background-image: url(../images/stolen-background.jpg);
+     background-attachment: fixed;
+     background-size: 100%; 
+     background-clip:padding-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130vh;
+    margin: 0;
+}
+body ::before{
+    content: "";
+    position: fixed;
+    background-color:rgba(0, 0, 0, 0.1) ;
+    left:70% ;
+    top:50%;
+    transform: translateX(-50%) skew(0,-10deg);
+    width:300% ;
+    height:100% ;
+    border-radius: 50%;
+    z-index: -1;
+    animation: waving 5s ease-in-out infinite alternate;
+}
+@keyframes waving {
+    form{
+        transform: translateX(-50%) skew(0,-10deg);
+    }
+    to{
+        transform: translateX(-30%) skew(10deg,0deg);
+    }
+} 
+
+
+.container {
+    background-color: rgba(90, 82, 82, 0.7);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+
+
+.title {
+    text-align: center;
+    margin-bottom: 30px;
+    color :white;
+}
+
+.input-group {
+    margin-bottom: 10px;
+    padding-right: 20px;
+    color :white;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+ .bottom{
+    background-color:rgb(5, 12, 12);
+    color: #fff;
+    cursor: pointer;
+    width: 450%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px; 
+    position: relative;
+    left: 45px;
+
+} 
+
+.bottom:hover{
+    background-color: rgb(150, 23, 23);
+}
+
+
+.n{
+    position: relative;
+    left: 70px;
+    color: white;
+}
+.g{
+    color: rgb(170, 23, 23);
+}
+
+.g:hover{
+    transition: 0.3s;
+    color: rgb(235, 235, 235);
+}
+
+.navbar {
+    background-color: rgb(0 0 0 / 79%);
+    width: 100vw;
+    position:fixed; 
+    top: 0px;
+    
+}
+.navbar>div:last-child{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 36px;
+    display: flex;
+    align-items: center;
+}
+.navbar>div:last-child::after{
+    margin-top: 7px;
+}
+.navbar .btn:last-child{
+    margin: 0 10px;
+}
+
+.btn-danger {
+    background-color: #E50914;
+}
