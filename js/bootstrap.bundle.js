@@ -4808,6 +4808,7 @@
    */
 
 
+
   EventHandler.on(document, EVENT_CLICK_DATA_API$2, SELECTOR_DATA_TOGGLE$2, function (event) {
     const target = getElementFromSelector(this);
 
@@ -4829,6 +4830,7 @@
     });
     const data = Modal.getOrCreateInstance(target);
     data.toggle(this);
+
   });
   /**
    * ------------------------------------------------------------------------
