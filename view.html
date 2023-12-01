@@ -11,12 +11,7 @@
 </head>
 
 <body>
-    <script>
 
-
-
-
-    </script>
 
     <nav class="navbar">
         <form class="container-fluid justify-content-start">
@@ -36,34 +31,155 @@
             <div class="modal-content bg-dark text-light">
                 <div class="modal-header">
                     <h5 class="modal-title" id="ModalLabel">Fullscreen Dark Modal</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i
-                            class="fa-solid fa-xmark"></i></button>
+                    <button type="button" class="btn-close" onclick="toggleOverflew()" data-bs-dismiss="modal"
+                        aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
                 </div>
                 <div class="modal-body">
-                    <!-- Modal content goes here -->
-                    <div class="img-side">
-                        <div class="img-box">
-                            <img src="imgs/slide1.jpg" alt="err">
+                    <section class="view">
+
+                        <!-- Modal content goes here -->
+                        <div class="img-side">
+                            <div class="img-box">
+                                <img src="imgs/slide1.jpg" alt="err">
+                            </div>
+                            <a href="" target="_blank"><button type="button" class="btn btn-danger">intro</button></a>
+                            <p class="data">XDDD</p>
                         </div>
-                        <a href=""><button type="button" class="btn btn-danger">intro</button></a>
-                        <p class="data">XDDD</p>
-                    </div>
-                    <div class="p-side">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus tenetur minus ea quod
-                            nostrum impedit possimus quia deleniti vero repudiandae in et harum, assumenda libero.
-                            Explicabo itaque ipsam repudiandae minus?</p>
-                        <div class="stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
+                        <div class="p-side">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus tenetur minus ea quod
+                                nostrum impedit possimus quia deleniti vero repudiandae in et harum, assumenda libero.
+                                Explicabo itaque ipsam repudiandae minus?</p>
+                            <div class="stars" nStars="four">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
                         </div>
-                    </div>
+                    </section>
+                    <section class="comment">
+                        <form class="add-comment">
+                            <!-- <hr> -->
+                            <h5>What is your opinion about this film ?</h5>
+                            <div class="stars" nStars="zero">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <textarea class="form-control " id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <button type="button" class="btn btn-primary">Add Comment</button>
+                        </form>
+                        <hr style="margin-top: 70px;">
+                        <ol class="comments">
+                            <li>
+                                <div class="input-group">
+                                    <h6 class="name">Abdon</h6>
+                                    <div class="stars" nStars="one">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="someone-comment">
+                                    The latest film was packed with a massive amount of thrill and action! Every moment
+                                    felt like a scene from an action movie. Truly awesome, you've got to take a look!
+                                </p>
+                            </li>
+                            <li>
+                                <div class="input-group">
+                                    <h6 class="name">Ahmed ragab</h6>
+                                    <div class="stars" nStars="four">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="someone-comment">
+                                    The new sci-fi film excelled in some aspects, but I felt that some moments were
+                                    exaggerated. Perhaps I have a different artistic taste. Did you feel the same?
+                                </p>
+                            </li>
+                            <li>
+                                <div class="input-group">
+                                    <h6 class="name">Catastr0ph1c</h6>
+                                    <div class="stars" nStars="two">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="someone-comment">
+                                    I've heard about the new film, but I don't think I'm interested. Maybe I have
+                                    another set of movies I'd prefer to watch. Is it really good?
+                                </p>
+                            </li>
+                            <li>
+                                <div class="input-group">
+                                    <h6 class="name">ahmniab</h6>
+                                    <div class="stars" nStars="three">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="someone-comment">
+                                    I watched the latest film, and it was a different experience. Despite some good
+                                    creative aspects, I noticed some weak points in the screenplay. Not bad, but not the
+                                    best for me.
+                                </p>
+                            </li>
+                            <li>
+                                <div class="input-group">
+                                    <h6 class="name">ENG GMY</h6>
+                                    <div class="stars" nStars="five">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="someone-comment">
+                                    The new film was terrific! Did you know that [movie name] is their favorite film?
+                                    They have excellent taste in choosing movies. Cinema seems to hold a special place
+                                    in their heart.
+                                </p>
+                            </li>
+                            <li>
+                                <div class="input-group">
+                                    <h6 class="name">Ahmed Hamed</h6>
+                                    <div class="stars" nStars="five">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="someone-comment">
+                                    The new film was amazing! I loved every moment of it. The storyline was thrilling,
+                                    and the performances were exceptional. If you haven't seen it yet, you should!
+                                </p>
+                            </li>
+                        </ol>
+                    </section>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
+                <button type="button" onclick="toggleOverflew()" class="btn btn-secondary"
+                    data-bs-dismiss="modal">Close</button>
+                <!-- <div class="modal-footer">
+                </div> -->
             </div>
         </div>
     </div>
@@ -80,24 +196,24 @@
         <div class="content">
             <div class="catg">
                 <h1 class="address">Action Movies</h1>
-                <div class="ww">
-                    <div class="item">
+                <ul class="ww">
+                    <li class="item">
                         <img src="images/photo1.jpg" alt="">
                         <h3 class="title">John Wick 4</h3>
                         <p class="info">2023 &middot; 220 min &middot; Action &middot; Rate 8.00</p>
                         <a href="https://youtu.be/8_9oTafX3K4?si=LAWWgc3w17EABcgF" target="_blank">
                             <button class="btn">Intro</button>
                         </a>
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li class="item">
                         <img src="images/photo3.jpg" alt="">
                         <h3 class="title">Fast X</h3>
                         <p class="info">2023 &middot; 120 min &middot; Action &middot; Rate 6.5</p>
                         <a href="https://youtu.be/32RAq6JzY-w?si=hwbwL4iNGWSPYXc6" target="_blank">
                             <button class="btn">Intro</button>
                         </a>
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li class="item">
                         <img src="images/photo23.jpeg" alt="">
                         <p>
                         <h3 class="title">Wrath Of Man</h3>
@@ -106,24 +222,24 @@
                         <a href="https://youtu.be/EFYEni2gsK0?si=dGELa86lD7D8PtQ6" target="_blank">
                             <button class="btn">Intro</button>
                         </a>
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li class="item">
                         <img src="images/photo24.jpeg" alt="">
                         <h3 class="title">OPPENHEIMER</h3>
                         <p class="info">2023 &middot; 120 min &middot; Action &middot; Rate 8.5</p>
                         <a href="https://youtu.be/uYPbbksJxIg?si=nG6usY4d6in42nhC" target="_blank">
                             <button class="btn">Intro</button>
                         </a>
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li class="item">
                         <img src="images/photo25.jpeg" alt="">
                         <h3 class="title">Skyscraper</h3>
                         <p class="info">2019 &middot; 120 min &middot; Action &middot; Rate 8.00</p>
                         <a href="https://youtu.be/t9QePUT-Yt8?si=ZWk-pMkBAaMVkotR" target="_blank">
                             <button class="btn">Intro</button>
                         </a>
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li class="item">
                         <img src="images/photo29.jpeg" alt="">
                         <h3 class="title">Hidden Strike</h3>
                         <p class="info">2023&middot; 120 min &middot; Action &middot; Rate 8.00</p>
@@ -131,152 +247,152 @@
                             target="_blank">
                             <button class="btn">Intro</button>
                         </a>
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li class="item">
                         <img src="images/photo27.jpeg" alt="">
                         <h3 class="title">العارف</h3>
                         <p class="info">2019 &middot; 100 min &middot; Action &middot; Rate 7.5</p>
                         <a href="https://youtu.be/PIaqyTlYWTg?si=0kTTOuhom43VAd0H" target="_blank">
                             <button class="btn">Intro</button>
                         </a>
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li class="item">
                         <img src="images/photo37.jpeg" alt="">
                         <h3 class="title">Expandabels 4</h3>
                         <p class="info">2023 &middot; 120 min &middot; Action &middot; Rate 8.5</p>
                         <a href="https://youtu.be/DhlaBO-SwVE?si=MRGsWqp4CiPiNzGt" target="_blank">
                             <button class="btn">Intro</button>
                         </a>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
 
             <div class="catg">
                 <h1 class="addr">Drama Movies</h1>
                 <div class="ww">
-                    <div class="item">
+                    <li class="item">
                         <img src="images/photo32.jpeg" alt="">
                         <h3 class="title">كيرة و الجن</h3>
                         <p class="info">2021&middot; 180 min &middot; Drama &middot; Rate 8.5</p>
                         <a href="https://youtu.be/KgyMVknHz-4?si=vrxpZSrdmitwOjZm" target="_blank">
                             <button class="btn">Intro</button>
                         </a>
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li class="item">
                         <img src="images/photo36.jpeg" alt="">
                         <h3 class="title">Red Notice</h3>
                         <p class="info">2022&middot; 120 min &middot; Crime &middot; Rate 7.5</p>
                         <a href="https://youtu.be/T6l3mM7AWew?si=B0Q10IXp8Ik6Qzcu" target="_blank">
                             <button class="btn">Intro</button>
                         </a>
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li class="item">
                         <img src="images/photo34.jpg" alt="">
                         <h3 class="title">الكنز</h3>
                         <p class="info">2020&middot; 120 min &middot; Drama &middot; Rate 6.5</p>
                         <a href="https://youtu.be/krPCwmdlqwY?si=7S7lHzdnCcwOd5Yy" target="_blank">
                             <button class="btn">Intro</button>
                         </a>
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li class="item">
                         <img src="images/burial.jpg" alt="">
                         <h3 class="title">The Burial</h3>
                         <p class="info">2023&middot; 130 min &middot; Drama &middot; Rate 7.5</p>
                         <a href="https://youtu.be/ZOhIdaufd3Q?si=IIJCzvmlYqD2qvwZ" target="_blank">
                             <button class="btn">Intro</button>
                         </a>
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li class="item">
                         <img src="images/killer1.jpg" alt="">
                         <h3 class="title">Killers of the Flower Moon</h3>
                         <p class="info">2023&middot; 200 min &middot; Drama &middot; Rate 7.00</p>
                         <a href="https://youtu.be/7cx9nCHsemc?si=_xggTbBCmB58T1kr" target="_blank">
                             <button class="btn">Intro</button>
                         </a>
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li class="item">
                         <img src="images/drama.jpg" alt="">
                         <h3 class="title">Pain Hustlrs</h3>
                         <p class="info">2023&middot; 120 min &middot; Drama &middot; Rate 6.00</p>
                         <a href="https://youtu.be/HbPeXsdamT4?si=irHARC8-lulFUzZI" target="_blank">
                             <button class="btn">Intro</button>
                         </a>
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li class="item">
                         <img src="images/bit.jpg" alt="">
                         <h3 class="title">بيت الروبى</h3>
                         <p class="info">2023&middot; 120 min &middot; Drama &middot; Rate 8.00</p>
                         <a href="https://youtu.be/06usNslBSI8?si=9_V7UgO6I4IquRee" target="_blank">
                             <button class="btn">Intro</button>
                         </a>
-                    </div>
+                    </li>
                 </div>
             </div>
             <div class="catg">
                 <h1 class="add">Funny Movies</h1>
                 <div class="ww">
-                    <div class="item">
+                    <li class="item">
                         <img src="images/photo7.jpg" alt="">
                         <h3 class="title">Barbie</h3>
                         <p class="info">2023&middot;100 min &middot; Comidy &middot; Rate 7.5</p>
                         <a href="https://youtu.be/pBk4NYhWNMM?si=9QPHBshBHwE1oqJR" target="_blank">
                             <button class="btn">Intro</button>
                         </a>
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li class="item">
                         <img src="images/No-Hard-Feelings-Poster.jpg" alt="">
                         <h3 class="title"> No Hard Feelings</h3>
                         <p class="info">2023&middot;110 min &middot; Comidy &middot; Rate 6.5</p>
                         <a href="https://youtu.be/P15S6ND8kbQ?si=0gt7PVaLgDsyJvb_" target="_blank">
                             <button class="btn">Intro</button>
                         </a>
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li class="item">
                         <img src="images/Turtles.avif" alt="">
                         <h3 class="title">Teenage Mutant Ninja Turtles</h3>
                         <p class="info">2023&middot;110 min &middot; Comidy &middot; Rate 7.5</p>
                         <a href="https://youtu.be/IHvzw4Ibuho?si=0Ovdpo52kYMBTpce" target="_blank">
                             <button class="btn">Intro</button>
                         </a>
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li class="item">
                         <img src="images/photo26.jpeg" alt="">
                         <h3 class="title">Lion King</h3>
                         <p class="info">2023&middot;110 min &middot; Comidy &middot; Rate 6.5</p>
                         <a href="https://youtu.be/7TavVZMewpY?si=iZqN2KHsVRTU-xpo" target="_blank">
                             <button class="btn">Intro</button>
                         </a>
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li class="item">
                         <img src="images/My_big_fat_greek_wedding_three.png" alt="">
                         <h3 class="title">My Big Fat Greek Wedding 3</h3>
                         <p class="info">2023&middot;110 min &middot; Comidy &middot; Rate 8.5</p>
                         <a href="https://youtu.be/AAflXqZ5xs0?si=m_OOjrN0t2EW-XFk" target="_blank">
                             <button class="btn">Intro</button>
                         </a>
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li class="item">
                         <img src="images/photo28.jpeg" alt="">
                         <h3 class="title">Alaa Eldien</h3>
                         <p class="info">2019 &middot; 120 min &middot; Comidy &middot; Rate 8.5</p>
                         <a href="https://youtu.be/qSzQa2b5LOQ?feature=shared" target="_blank">
                             <button class="btn">Intro</button>
                         </a>
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li class="item">
                         <img src="images/TAG.jpg" alt="">
                         <h3 class="title">TAG تاج</h3>
                         <p class="info">2022 &middot; 120 min &middot; Comidy &middot; Rate 8.5</p>
                         <a href="https://youtu.be/XTjHE6hm5I0?si=IbE0EbUZfnYEkicE" target="_blank">
                             <button class="btn">Intro</button>
                         </a>
-                    </div>
+                    </li>
                 </div>
             </div>
             <div class="catg">
                 <h1 class="d">Scarry Movies </h1>
                 <div class="ww">
-                    <div class="item">
+                    <li class="item">
                         <img src="images/photo30.jpeg" alt="">
                         <h3 class="title">الفيل الازرق 2</h3>
                         <p class="info">2023&middot; 120 min &middot; Scarry &middot; Rate 8.00</p>
@@ -284,116 +400,116 @@
                             target="_blank">
                             <button class="btn">Intro</button>
                         </a>
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li class="item">
                         <img src="images/nun.jpg" alt="">
                         <h3 class="title">The Nun 2</h3>
                         <p class="info">2023&middot; 120 min &middot; Scarry &middot; Rate 7.5</p>
                         <a href="https://youtu.be/QF-oyCwaArU?si=--FSV1GmzxJs7mv4" target="_blank">
                             <button class="btn">Intro</button>
                         </a>
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li class="item">
                         <img src="images/evil-dead-rise-poster.avif" alt="">
                         <h3 class="title">Evil Dead Rise</h3>
                         <p class="info">2023&middot; 110 min &middot; Scarry &middot; Rate 7.00</p>
                         <a href="https://youtu.be/smTK_AeAPHs?si=GJ6fiUwcBZKrHZo-" target="_blank">
                             <button class="btn">Intro</button>
                         </a>
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li class="item">
                         <img src="images/der.jpg" alt="">
                         <h3 class="title">The Last Voyage of the Demeter</h3>
                         <p class="info">2023&middot; 120 min &middot; Scarry &middot; Rate 6.00</p>
                         <a href="https://youtu.be/6FgUUO9Ztd0?si=fDSxWTA9Y4PRuYo2" target="_blank">
                             <button class="btn">Intro</button>
                         </a>
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li class="item">
                         <img src="images/h.jpg" alt="">
                         <h3 class="title">The Exorcist: Believer</h3>
                         <p class="info">2023&middot; 120 min &middot; Scarry &middot; Rate 6.5</p>
                         <a href="https://youtu.be/PIxpPMyGcpU?si=4MBExYyabIiZc1cV" target="_blank">
                             <button class="btn">Intro</button>
                         </a>
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li class="item">
                         <img src="images/smile.jpg" alt="">
                         <h3 class="title">Smile</h3>
                         <p class="info">2023&middot; 120 min &middot; Scarry &middot; Rate 7.5</p>
                         <a href="https://youtu.be/BcDK7lkzzsU?si=UDI85Vsopyi6Y2xy" target="_blank">
                             <button class="btn">Intro</button>
                         </a>
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li class="item">
                         <img src="images/فيل.jpg.crdownload" alt="">
                         <h3 class="title">الفيل الأزرق 1</h3>
                         <p class="info">2015&middot; 120 min &middot; Scarry &middot; Rate 8.00</p>
                         <a href="https://youtu.be/I5Bat3GPqGc?si=r46LNHNhVN4CeuEX" target="_blank">
                             <button class="btn">Intro</button>
                         </a>
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li class="item">
                         <img src="images/the-menu.jpg" alt="">
                         <h3 class="title">The Menu</h3>
                         <p class="info">2015&middot; 120 min &middot; Scarry &middot; Rate 8.00</p>
                         <a href="https://youtu.be/C_uTkUGcHv4?si=VydbexZpyxh1iQ9e" target="_blank">
                             <button class="btn">Intro</button>
                         </a>
-                    </div>
+                    </li>
                     <div class="catg">
                         <h1 class="ad">TV Series</h1>
                         <div class="ww">
 
-                            <div class="item">
+                            <li class="item">
                                 <img src="images/breaking.jpg" alt="">
                                 <h3 class="title">Breaking Bad</h3>
                                 <p class="info">2016&middot;5 Seasons &middot; Drama &middot; Rate 8.5</p>
                                 <a href="https://youtu.be/3oFofYisAko?si=aTKMoclOqxlvrimy" target="_blank">
                                     <button class="btn">Intro</button>
                                 </a>
-                            </div>
-                            <div class="item">
+                            </li>
+                            <li class="item">
                                 <img src="images/Game.jpg.crdownload" alt="">
                                 <h3 class="title">Game Of Thrones</h3>
                                 <p class="info">2016&middot; 6 Seasons &middot; Marvel &middot; Rate 6.5</p>
                                 <a href="https://youtu.be/A0pLbTXPHng?si=UTX3w8UGa8c_423k" target="_blank">
                                     <button class="btn">Intro</button>
                                 </a>
-                            </div>
+                            </li>
 
-                            <div class="item">
+                            <li class="item">
                                 <img src="images/prison-break.jpg" alt="">
                                 <h3 class="title">Prison Break</h3>
                                 <p class="info">2017&middot; 5 season &middot; Action &middot; Rate 7.00</p>
                                 <a href="https://youtu.be/iABCLLOrzZA?si=Z6ttm6C572TmAC-k" target="_blank">
                                     <button class="btn">Intro</button>
                                 </a>
-                            </div>
-                            <div class="item">
+                            </li>
+                            <li class="item">
                                 <img src="images/photo33.jpeg" alt="">
                                 <h3 class="title">ما وراء الطبيعة</h3>
                                 <p class="info">2021&middot; 1 Season &middot; Scarry &middot; Rate 8.00</p>
                                 <a href="https://youtu.be/s9jBzFebPEM?si=QOLjz53FgzxT3rMq" target="_blank">
                                     <button class="btn">Intro</button>
                                 </a>
-                            </div>
-                            <div class="item">
+                            </li>
+                            <li class="item">
                                 <img src="images/casa.jpg" alt="">
                                 <h3 class="title">la casa de papel</h3>
                                 <p class="info">2020&middot; 1 Season &middot; Drama &middot; Rate 7.5</p>
                                 <a href="https://youtu.be/_InqQJRqGW4?si=2fLhlgPO7irM-I-W" target="_blank">
                                     <button class="btn">Intro</button>
                                 </a>
-                            </div>
-                            <div class="item">
+                            </li>
+                            <li class="item">
                                 <img src="images/big.jpg" alt="">
                                 <h3 class="title">الكبير أوى</h3>
                                 <p class="info">2022&middot; 7 Season &middot; Comidy &middot; Rate 8.5</p>
                                 <a href="https://youtu.be/iq-n7OjR7oE?si=TOJkqqCcV7s8NY7e" target="_blank">
                                     <button class="btn">Intro</button>
                                 </a>
-                            </div>
+                            </li>
 
                         </div>
                     </div>
@@ -402,7 +518,6 @@
             </div>
 
             <script src="js/view.js"></script>
-            <script src="js/searchFilm.js"></script>
             <script src="js/bootstrap.bundle.js"></script>
             <script src="js/bootstrap.js"></script>
             <script src="js/jquery-3.7.1.js"></script>

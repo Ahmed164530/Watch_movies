@@ -1,6 +1,14 @@
 * {
     overflow-x: hidden;
 }
+nav{
+    z-index: 1;
+}
+
+.hidden-overflew{
+    overflow: hidden;
+
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -213,10 +221,18 @@ body {
     background-color: #E50914;
 }
 
-.modal-body {
+.modal-content .btn-secondary.btn {
+    width: 70px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.modal-body section.view {
     display: flex;
     justify-content: center;
-    overflow-y: scroll;
+    overflow: hidden;
+    padding-top: 50px;
 
 }
 .img-side {
@@ -230,38 +246,145 @@ body {
     margin: 20px;
 }
 
-.modal-body .img-box {
+.modal-body section.view .img-box {
     width: 325px;
     height: 325px;
     overflow: hidden;
 }
 
-.modal-body .img-box img {
+.modal-body section.view .img-box img {
     width: 100%;
     width: 100%;
 }
 
 
-.modal-body .p-side  {
+
+.modal-body section.view .p-side  {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.modal-body .p-side p {
+.modal-body section.view .p-side p {
     width: 500px;
     padding: 50px;
     font-size: 20px;
     
 }
-.modal-body .p-side .stars :first-child{
+
+
+
+.modal-body section.comment{
+    padding-left: 20px;
+    
+}
+.modal-body section.comment .add-comment{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.modal-body section.comment .add-comment textarea {
+    width: 500px;
+    min-height: 110px;
+    margin: 20px;
+    overflow: hidden;
+    background-color: #343a40;
+    color: #fff;
+    
+}
+.modal-body section.comment .comments{
+    /* padding: 0; */
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+}
+.modal-body section.comment .comments li:hover{
+    /* background-color: #40464d; */
+    color: #fff;
+} 
+.modal-body section.comment .comments li{ 
+    /* padding: 20px; */
+    color: #c5c5c5;
+    transition-duration: 0.2s;
+}
+
+.modal-body section.comment .comments .name {
+    /* width: 150px; */
+    color: #ececec;
+    
+    font-size: 20px;
+    margin-right: 10px;
+    /* display: flex; */
+    /* gap: 30px; */
+}
+.modal-body section.comment .comments li p{
+    width: 600px;
+} 
+
+
+/* stars style section */
+
+.input-group .stars{
+    display: inline;
+    padding-top: 2px;
+    
+    /* color: #fff; */
+}
+
+
+/* one star */
+.stars[nStars = "zero"] :first-child{
+    color: #fff;
+}  
+
+/* one star */
+.stars[nStars = "one"] :first-child{
     color: #ffc107;
 }  
-.modal-body .p-side .stars :nth-child(2){
+
+/* two stars */
+ .stars[nStars = "two"] :first-child{
+     color: #ffc107;
+    }  
+ .stars[nStars = "two"] :nth-child(2){
     color: #ffc107;
 }
-.modal-body .p-side .stars :nth-child(3){
+
+/* tree stars */
+ .stars[nStars = "three"] :nth-child(1){
     color: #ffc107;
 }
-.modal-body .p-side .stars :nth-child(4){
+ .stars[nStars = "three"] :nth-child(2){
+    color: #ffc107;
+} 
+ .stars[nStars = "three"] :nth-child(3){
     color: #ffc107;
 }
+
+/* four stars */
+ .stars[nStars = "four"] :first-child{
+    color: #ffc107;
+}  
+ .stars[nStars = "four"] :nth-child(2){
+    color: #ffc107;
+}
+ .stars[nStars = "four"] :nth-child(3){
+    color: #ffc107;
+}
+ .stars[nStars = "four"] :nth-child(4){
+    color: #ffc107;
+}
+
+/* five stars */
+ .stars[nStars = "five"] {
+    color: #ffc107;
+}
+
+/* .modal-body section.comment .add-comment .stars{
+    /* cursor: pointer; 
+    /* transition-duration: 1s 
+} */

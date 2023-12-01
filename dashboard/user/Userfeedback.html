@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/project_framework.css">
+    <link rel="stylesheet" href="../../css/all.min.css">
+    <link rel="stylesheet" href="../../css/Userfeed.css">
+    <link rel="shortcut icon" href="imgs/icon.ico" type="image/x-icon">
+    <title>Feedback</title>
+</head>
+
+
+<body>
+    <nav class="navbar">
+        <form class="container-fluid justify-content-start">
+            <a href="index.html"><button type="button" class="btn btn-light">Your Profile</button></a>
+            <a href="../../view.html"><button type="button" class="btn btn-danger">View Movie</button></a>
+        </form>
+        <div class="logo"></div>
+    </nav>
+
+    <form class="feedback-form">
+     
+        <label for="feedback"><h1>Feedback</h1></label>
+        <textarea id="feedback" name="feedback" rows="4" cols="50" required placeholder="Enter Your Feedback"></textarea>
+        <input type="submit" value="Send">
+    </form>
+
+    <div class="thank-you">
+        <h2>Thank you for your feedback!</h2>
+    </div>
+
+    <script>
+        document.querySelector('.feedback-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.querySelector('.feedback-form').style.display = 'none';
+            document.querySelector('.thank-you').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
+
+
+
