@@ -23,7 +23,6 @@ body {
     color: white;
     text-align: center;
 }
-
 #searchInput {
     width: 80%;
     padding: 10px;
@@ -34,6 +33,18 @@ body {
     border-radius: 5px;
     border: 1px solid #ccc;
 }
+
+  i {
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+
+ i:hover{
+    transition: 0.5s;
+}  
 
 #searchInput:focus {
     outline: none;
