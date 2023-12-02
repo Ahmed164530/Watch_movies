@@ -19,11 +19,32 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 400px;
 }
+.login-container ::before{
+    content: "";
+    position: fixed;
+    background-color:rgba(23, 58, 75, 0.1) ;
+    left:70% ;
+    top:50%;
+    transform: translateX(-50%) skew(0,-10deg);
+    width:300% ;
+    height:100% ;
+    border-radius: 50%;
+    z-index: -1;
+    animation: waving 2s ease-in-out infinite alternate;
+}
+@keyframes waving {
+    form{
+        transform: translateX(-50%) skew(0,-10deg);
+    }
+    to{
+        transform: translateX(-30%) skew(10deg,0deg);
+    }
+}  
 
 
 h1 {
     text-align: center;
-    color: rgb(185, 9, 9);
+    color: rgb(126, 17, 17);
     margin-bottom: 20px;
 }
 .e{

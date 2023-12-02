@@ -7,10 +7,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 130vh;
+     height: 50vh; 
     margin: 0;
 }
-body ::before{
+.container ::before{
     content: "";
     position: fixed;
     background-color:rgba(0, 0, 0, 0.1) ;
@@ -21,7 +21,7 @@ body ::before{
     height:100% ;
     border-radius: 50%;
     z-index: -1;
-    animation: waving 5s ease-in-out infinite alternate;
+    animation: waving 2s ease-in-out infinite alternate;
 }
 @keyframes waving {
     form{
@@ -30,7 +30,7 @@ body ::before{
     to{
         transform: translateX(-30%) skew(10deg,0deg);
     }
-} 
+}  
 
 
 .container {
@@ -39,6 +39,9 @@ body ::before{
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 500px;
+    size-adjust: 100px;
+    position: relative;
+    top: 300px;
 }
 
 
