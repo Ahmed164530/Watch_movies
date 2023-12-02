@@ -363,3 +363,12 @@ submit.addEventListener('click', function () {
 
     }
 });
+
+
+const heart = document.querySelectorAll('.fa-solid.fa-heart');
+
+heart.forEach(function (heart) {
+    heart.addEventListener('click', function () {
+        heart.classList.toggle('color-red');
+    })
+});

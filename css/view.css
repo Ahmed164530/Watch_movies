@@ -1,11 +1,14 @@
+/* line 37  */
+
 * {
     overflow-x: hidden;
 }
-nav{
+
+nav {
     z-index: 1;
 }
 
-.hidden-overflew{
+.hidden-overflew {
     overflow: hidden;
 
 }
@@ -23,6 +26,7 @@ body {
     color: white;
     text-align: center;
 }
+
 #searchInput {
     width: 80%;
     padding: 10px;
@@ -34,17 +38,17 @@ body {
     border: 1px solid #ccc;
 }
 
-  i {
+/* i {
     color: white;
     padding: 5px;
     cursor: pointer;
     padding: 5px;
-}
+} */
 
 
- i:hover{
+i:hover {
     transition: 0.5s;
-}  
+}
 
 #searchInput:focus {
     outline: none;
@@ -80,7 +84,7 @@ body {
 
 .catg .ww {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     border-radius: 50px;
     margin-bottom: 30px;
 }
@@ -169,8 +173,8 @@ body {
 }
 
 
-.item h3{
-    color:aliceblue;
+.item h3 {
+    color: aliceblue;
     margin-top: 10px;
 }
 
@@ -246,13 +250,15 @@ body {
     padding-top: 50px;
 
 }
+
 .img-side {
     display: flex;
     flex-direction: column;
     align-items: center;
     /* gap: 20px; */
 }
-.img-side button{
+
+.img-side button {
     width: 100px;
     margin: 20px;
 }
@@ -270,31 +276,33 @@ body {
 
 
 
-.modal-body section.view .p-side  {
+.modal-body section.view .p-side {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .modal-body section.view .p-side p {
     width: 500px;
     padding: 50px;
     font-size: 20px;
-    
+
 }
 
 
 
-.modal-body section.comment{
+.modal-body section.comment {
     padding-left: 20px;
-    
+
 }
-.modal-body section.comment .add-comment{
+
+.modal-body section.comment .add-comment {
     margin-top: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 
@@ -305,19 +313,22 @@ body {
     overflow: hidden;
     background-color: #343a40;
     color: #fff;
-    
+
 }
-.modal-body section.comment .comments{
+
+.modal-body section.comment .comments {
     /* padding: 0; */
     display: flex;
     flex-direction: column-reverse;
     gap: 30px;
 }
-.modal-body section.comment .comments li:hover{
+
+.modal-body section.comment .comments li:hover {
     /* background-color: #40464d; */
     color: #fff;
-} 
-.modal-body section.comment .comments li{ 
+}
+
+.modal-body section.comment .comments li {
     /* padding: 20px; */
     color: #c5c5c5;
     transition-duration: 0.2s;
@@ -326,72 +337,79 @@ body {
 .modal-body section.comment .comments .name {
     /* width: 150px; */
     color: #ececec;
-    
+
     font-size: 20px;
     margin-right: 10px;
     /* display: flex; */
     /* gap: 30px; */
 }
-.modal-body section.comment .comments li p{
+
+.modal-body section.comment .comments li p {
     width: 600px;
-} 
+}
 
 
 /* stars style section */
 
-.input-group .stars{
+.input-group .stars {
     display: inline;
     padding-top: 2px;
-    
+
     /* color: #fff; */
 }
 
 
 /* one star */
-.stars[nStars = "zero"] :first-child{
+.stars[nStars="zero"] :first-child {
     color: #fff;
-}  
+}
 
 /* one star */
-.stars[nStars = "one"] :first-child{
+.stars[nStars="one"] :first-child {
     color: #ffc107;
-}  
+}
 
 /* two stars */
- .stars[nStars = "two"] :first-child{
-     color: #ffc107;
-    }  
- .stars[nStars = "two"] :nth-child(2){
+.stars[nStars="two"] :first-child {
+    color: #ffc107;
+}
+
+.stars[nStars="two"] :nth-child(2) {
     color: #ffc107;
 }
 
 /* tree stars */
- .stars[nStars = "three"] :nth-child(1){
+.stars[nStars="three"] :nth-child(1) {
     color: #ffc107;
 }
- .stars[nStars = "three"] :nth-child(2){
+
+.stars[nStars="three"] :nth-child(2) {
     color: #ffc107;
-} 
- .stars[nStars = "three"] :nth-child(3){
+}
+
+.stars[nStars="three"] :nth-child(3) {
     color: #ffc107;
 }
 
 /* four stars */
- .stars[nStars = "four"] :first-child{
-    color: #ffc107;
-}  
- .stars[nStars = "four"] :nth-child(2){
+.stars[nStars="four"] :first-child {
     color: #ffc107;
 }
- .stars[nStars = "four"] :nth-child(3){
+
+.stars[nStars="four"] :nth-child(2) {
     color: #ffc107;
 }
- .stars[nStars = "four"] :nth-child(4){
+
+.stars[nStars="four"] :nth-child(3) {
+    color: #ffc107;
+}
+
+.stars[nStars="four"] :nth-child(4) {
     color: #ffc107;
 }
 
 /* five stars */
- .stars[nStars = "five"] {
+.stars[nStars="five"] {
     color: #ffc107;
 }
 
@@ -399,3 +417,18 @@ body {
     /* cursor: pointer; 
     /* transition-duration: 1s 
 } */
+
+.fa-solid.fa-heart {
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    padding: 5px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+
+}
+
+.color-red {
+    color: #a52727 !important;
+}
